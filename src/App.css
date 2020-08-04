@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#root{
+  
+  text-align: center;
+  background-image:  url(https://blog.hubspot.com/hubfs/To_Do_List.png);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 84.65vh;
+  height: auto;
+  padding: 50px 0;
+  margin: 0 0;
+}
+
+h1 {
+    font-size: 3rem;
+  color: #00c853;
+  font-family: 'Lobster', cursive;
+}
+
+.submit {
+    border: none;
+    background-color: #00c853;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0 20px 0 0; 
+    position: relative;
+    bottom: 1px;
+}
+button:focus{
+  outline: none;
+}
+.Noteform{
+  display: flex;
+}
+.input{
+  height: 31px;
+  width: 60%;
+  border:1px solid #00c853;
+  transition: all 0.4s ease-out;
+  padding-left: 15px;
+  border-radius: 0 0 0 20px; 
+  font-size: 1rem;
+  color: #757575;
+}
+.input:focus{
+  outline: none;
+}
+form{
+  min-height: 70vh;
+  height: auto;
+  
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(10, 10, 41,0.8);
+  padding: 30px;
+  
+}
+.noteItem{
+  display: flex;
+  font-size: 1.4rem;
+  margin: auto;
+  height: 1.4rem;
+  width: 80%;
+  padding: 10px 20px;
+  background-color: #00c853;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+  position: relative;
+  top: 30px;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 1s ease-out;
+}
+.Notefrom{
+  padding: 10px;
+}
+
+.deleteBnt{
+  position: absolute;
+  top: -50%;
+  cursor: pointer;
+  left: 100%;
+  height: 5pc;
+  width: 5pc;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  
+  transition: all 0.2s ease-out;
+}
+.noteItem:hover .deleteBnt{
+  left: 90.5%;
+}
+@media (max-width: 800px){
+  #root{
+    min-height: 100%;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+  }
+  form{
+    width: 100%;
+    margin-top :-50px;
+    height: 100vh;
+    padding: 0;
+    overflow-y: auto;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .input{
+    width: 12pc;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+  .submit{
+    height: 25px;
+    bottom: -4px;
+    position: relative;
+    font-size: 0.8rem;
+  }
+  .Noteform{
+    margin-left: auto;
+  }
+  .noteItem{
+    width: 15pc;
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+}
